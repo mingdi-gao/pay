@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div>
+        <form action="https://post.cert.transactionexpress.com/PostMerchantService.svc/CreditCardSale" method="post">
+            @*<div>
+            <label>cardnumber</label>
+            <input type="text" name="CardNumber" value="12345" />
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" name="HolderName" value="Mingdi" />
+        </div>
+        <div>
+            <label>cvv</label>
+            <input type="text" name="cvv" value="123" />
+        </div>*@
+            <div>
+                <label>cardnumber</label>
+                <input type="text" name="AccountNumber" value="549974000000000057" />
+            </div>
+            <div>
+                <label>ExpirationDate</label>
+                <input type="text" name="ExpirationDate" value="1909" />
+            </div>
+            <div>
+                <label>Amount</label>
+                <input type="text" name="Amount" value="1000" />
+            </div>
+            <div>
+                <input type="text" name="GatewayID" hidden value="7777779313" />
+                <input type="text" name="RegKey" hidden value="6PY5M5BQMJMB8TPW" />
+                <input type="submit" />
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
